@@ -415,82 +415,92 @@ LOCALIZE = {
             ],
         },
     },
-    # "template": {
-    #     # Generic Terms
-    #     "play": "",
-    #     "movies": [],
-    #     "shows": [],
+    "it": {
+         # Generic Terms
+         "play": ["riproduci", "avvia", "fai partire", "metti"],
+         "movies": ["film"],
+         "shows": ["programmi", "show"],
 
-    #     # Controls
-    #     "controls": {
-    #         "play": "",
-    #         "pause": "",
-    #         "stop": "",
-    #         "jump_forward": "",
-    #         "jump_back": "",
-    #     },
+         # Controls
+         "controls": {
+             "play": "play",
+             "pause": "pausa",
+             "stop": "stop",
+             "jump_forward": "vai avanti",
+             "jump_back": "vai indietro",
+         },
 
-    #     # Text for errors
-    #     "not_found": "",
-    #     "cast_device": "",
-    #     # no_call error is for when no command was recieved
-    #     "no_call": "",
+         # Text for errors
+         "not_found": "non è stato trovato",
+         "cast_device": "dispositivo di casting",
+         # no_call error is for when no command was recieved
+         "no_call": "non è stato ricevuto nessun comando",
 
-    #     # Invoke Command
-    #     "play_start": [],
+         # Invoke Command
+         "play_start": [
+            "riproduci il film",
+            "riproduci film",
+            "riproduci il programma",
+            "riproduci il programma tv",
+            "riproduci show",
+            "riproduci programma",
+            "riproduci tv",
+            "riproduci il",
+            "riproduci",
+        ],
 
-    #     # Ordinal Numbers to Integers
-    #     "ordinals": {
-    #         # Edit the keys for translation, not the integers.
-    #         "first": "1",
-    #         "second": "2",
-    #         "third": "3",
-    #         "fourth": "4",
-    #         "fifth": "5",
-    #         "sixth": "6",
-    #         "seventh": "7",
-    #         "eighth": "8",
-    #         "ninth": "9",
-    #         "tenth": "10",
+         # Ordinal Numbers to Integers
+         "ordinals": {
+             # Edit the keys for translation, not the integers.
+             "primo": "1",
+             "secondo": "2",
+             "terzo": "3",
+             "quarto": "4",
+             "quinto": "5",
+             "sesto": "6",
+             "settimo": "7",
+             "ottavo": "8",
+             "nono": "9",
+             "decimo": "10",
     #         # Do not edit the keys of pre and post
-    #         "pre": [],
-    #         "post": [],
-    #     },
+             "pre": ["il", "la"],
+             "post": ["di", "del", "dei", "della"],
+         },
 
     #     # Keywords, Pre, and Post
-    #     "season": {
-    #         "keywords": [],
-    #         "pre": [],
-    #         "post": [],
-    #     },
-    #     "episode": {
-    #         "keywords": [],
-    #         "pre": [],
-    #         "post": [],
-    #     },
-    #     "latest": {
-    #         "keywords": [],
-    #         "pre": [],
-    #         "post": [],
-    #     },
-    #     "unwatched": {
-    #         "keywords": [],
-    #         "pre": [],
-    #         "post": [],
-    #     },
-    #     "ondeck": {
-    #         "keywords": [],
-    #         "pre": [],
-    #         "post": [],
-    #     },
-    #     # This is the seperator word used at the end of the command
-    #     # to let us know it is a cast device.
-    #     # Examples: "Play Coco on Samsung TV" - "Play Coco on the Samsung TV"
-    #     "seperator": {
-    #         # Only use one keyword for this one.
-    #         "keywords": [],
-    #         "pre": [],
-    #         "post": [],
-    #     },
-    # },
+         "season": {
+             "keywords": ["stagione", "storia"],
+             "pre": ["il", "la"],
+             "post": ["di", "del", "dei", "della", "su"],
+         },
+         "episode": {
+             "keywords": ["episodio"],
+             "pre": ["il", "la"],
+             "post": ["di", "del", "dei", "della", "su"],
+         },
+         "latest": {
+             "keywords": ["ultimo", "ultima", "nuovo", "nuova"],
+             "pre": ["il", "la"],
+             "post": ["di", "del", "dei", "della", "su"],
+         },
+         "unwatched": {
+             "keywords": ["non ancora guardato", "non visto", "non guardato"],
+             "pre": ["il", "la"],
+             "post": ["di", "del", "dei", "della", "su"],
+         },
+         "ondeck": {
+             "keywords": ["sullo scaffale","sulla scrivania","consigliato","consigliati"],
+             "pre": ["il", "la"],
+             "post": ["di", "del", "dei", "della", "su"],
+         },
+         # This is the seperator word used at the end of the command
+         # to let us know it is a cast device.
+         # Examples: "Play Coco on Samsung TV" - "Play Coco on the Samsung TV"
+         "seperator": {
+             # Only use one keyword for this one.
+             "keyword": ["su"],
+             "pre": [],
+             "post": [],
+         },
+     },
 }
